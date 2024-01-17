@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int main() {
+	
+	int l,b;
+	cin>>l>>b;
+	int n;
+	cin>>n;
+   ll ans=0;
+    for(ll i=0;i<n;i++)
+    {
+        ll L,B;
+        cin>>L>>B;
+        ans+=max((L/l)*(B/b),(L/b)*(B/l));
+    }
+    cout<<ans;
+    return 0;
+
+}
